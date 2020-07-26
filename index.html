@@ -34,22 +34,6 @@
 
 
 <body>
-    <div id="he-plugin-standard"></div>
-    <script>
-    WIDGET = {
-     CONFIG: {
-      "layout": 1,
-      "width": "450",
-      "height": "150",
-      "background": 1,
-      "dataColor": "FFFFFF",
-      "language": "zh",
-      "borderRadius": 5,
-      "key": "QegmZ2Amce"
-     }
-    }
-    </script>
-    <script src="https://apip.weatherdt.com/standard/static/js/weather-standard-common.js?v=2.0"></script>
 	
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
@@ -765,14 +749,14 @@ $(function () {
     </a>
 </div>
 
-
+	
     <script src="/libs/materialize/materialize.min.js"></script>
     <script src="/libs/masonry/masonry.pkgd.min.js"></script>
     <script src="/libs/aos/aos.js"></script>
     <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
-
+     
     <!-- Baidu Analytics -->
 
     <!-- Baidu Push -->
@@ -813,6 +797,34 @@ $(function () {
 	<!--动态线条背景-->
     <script type="text/javascript"color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
     </script>
+	
+	<div id="weather-v2-plugin-simple"></div>
+    <script>
+    WIDGET = {
+     CONFIG: {
+      "modules": "01234",
+      "background": 1,
+      "tmpColor": "FFFFFF",
+      "tmpSize": 16,
+      "cityColor": "FFFFFF",
+      "citySize": 16,
+      "aqiSize": 16,
+      "weatherIconSize": 24,
+      "alertIconSize": 18,
+      "padding": "10px 10px 10px 10px",
+      "shadow": "1",
+      "language": "zh",
+      "borderRadius": 5,
+      "fixed": "true",
+      "vertical": "middle",
+      "horizontal": "center",
+      "left": 10,
+      "top": 10,
+      "key": "21POsK9wip"
+     }
+    }
+    </script>
+    <script src="https://apip.weatherdt.com/simple/static/js/weather-simple-common.js?v=2.0"></script>
 	
 </body>
 
